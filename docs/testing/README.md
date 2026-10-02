@@ -1,14 +1,19 @@
 # Testing Strategy
 
-This application utilizes `pytest` to guarantee the integrity of data transformations.
+This application utilizes `pytest` alongside `pytest-cov` to guarantee the integrity of data transformations and ensure
+robust code coverage.
 
 ## Execution
 
-To execute the test suite and view code coverage:
+To execute the test suite and view code coverage in the terminal:
 
 ```bash
 pytest
 ```
+
+*Note: The test suite runs end-to-end integration tests natively and will output a `tests coverage` summary table
+detailing statements, misses, and overall percentage covered (e.g., 100% coverage on `test_etl.py` and core
+initialization files).*
 
 ## Test Tiers
 
@@ -18,3 +23,4 @@ pytest
     - Inserts predetermined transaction rows.
     - Executes the SQL pipeline.
     - Asserts that outputs (Cohort Sizes, Retention Percentages) match mathematical expectations exactly.
+    - Validates that execution logs successfully record a `SUCCESS` status.
