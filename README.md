@@ -11,12 +11,13 @@ runner, enabling sub-5-second execution times across millions of rows.
 - **Advanced SQL Transformations**: Utilizes Window Functions, CTEs, and aggregated joins in DuckDB/PostgreSQL to
   accurately compute month-over-month retention and rolling LTV.
 - **High-Performance Execution**: In-process analytics using DuckDB to process 1,000,000+ transactional rows in under 5
-  seconds.
+  seconds (benchmarked at ~174ms).
 - **Automated ETL**: Built-in pipeline with comprehensive execution metadata logging.
 - **BI-Ready Exports**: Outputs dimensional aggregated flat files perfectly formatted for Power BI, Tableau, or Looker.
 
 ## 📚 Documentation Index
 
+- [Run Results & Benchmarks](docs/results/README.md)
 - [Usage & Configuration](docs/usage/README.md)
 - [Architecture & Data Flow](docs/architecture/README.md)
 - [Testing Strategy](docs/testing/README.md)
