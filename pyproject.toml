@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cohort-ltv-engine"
-version = "0.2.0"
+version = "0.3.0"
 description = "Automated Customer Cohort Retention and Lifetime Value (LTV) Analytics Engine"
 authors = [
     { name = "Bibek Dhakal" }
