@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/Bibek-Dhakal/CohortLTVEngine/compare/v0.2.0...v0.3.0) (2026-10-02)
+
+
+### Features
+
+* **core:** initial project setup for CohortLTV Engine with DuckDB ETL pipeline ([a3868d4](https://github.com/Bibek-Dhakal/CohortLTVEngine/commit/a3868d4962357f815b11931e4df8991595f41564))
+
+
+### Documentation
+
+* **results:** document 174ms ETL performance benchmark and visualization outputs ([45e3471](https://github.com/Bibek-Dhakal/CohortLTVEngine/commit/45e3471dee7c46abc9dc69ef681233990a57421d))
+* **results:** update run results with notebook link and terminal output image ([c81c2c5](https://github.com/Bibek-Dhakal/CohortLTVEngine/commit/c81c2c5a6b996aacb70bfc6c1928f6fcc2632a09))
+
 ## [0.2.0](https://github.com/Bibek-Dhakal/CohortLTVEngine/compare/v0.1.0...v0.2.0) (2026-10-02)
 
 
