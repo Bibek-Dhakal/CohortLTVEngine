@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cohort-ltv-engine"
+version = "0.1.0"
+description = "Automated Customer Cohort Retention and Lifetime Value (LTV) Analytics Engine"
+authors = [
+    { name = "Bibek Dhakal" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "duckdb",
+    "pandas",
+    "sqlalchemy",
+    "python-dotenv"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "pre-commit"
+]
+notebooks = [
+    "jupyter",
+    "matplotlib",
+    "seaborn"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "B"]
+ignore = ["B008", "E501"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--cov=src --cov-report=term-missing"
+testpaths = ["tests"]
+pythonpath = ["."]
